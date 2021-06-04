@@ -1,5 +1,7 @@
 # Application
 
+This is a simple task to create an API.
+
 ## Single page application
 
 - Setup up your .env - works with sqlite
@@ -10,7 +12,7 @@
 
 ## Making requests to the API
 
-- First acquire a token, /api/sanctum/token `curl -X POST -d 'email=dale@snowdon.dev' -d 'password=123456789' -d 'device_name=curl' http://localhost:8000/api/sanctum/token`
+- First acquire a token, /api/sanctum/token `curl -X POST -d 'email=dale@snowdon.dev' -d 'password=123456789' http://localhost:8000/api/sanctum/token`
 - Next you can hit the API by giving your bearer token to an endpoint `curl -v -X POST -d 'message=asdfsdf' -H "Authorization: Bearer 1|u1R0XADNLodN2sDAUBFxOBge6ZVMVMCHt2AIPIt4" http://localhost:8000/api/messages`
 
 
